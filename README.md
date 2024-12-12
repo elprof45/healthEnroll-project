@@ -1,10 +1,11 @@
----
-
 # HealthEnroll
 
-**HealthEnroll** est une application cloud conçue pour aider les hôpitaux, cliniques et autres établissements de santé à centraliser les données des patients, analyser leur état de santé, et faciliter l'enregistrement et la gestion des informations médicales en temps réel.
+**HealthEnroll** est une application cloud conçue pour aider les hôpitaux, cliniques et autres établissements
+de santé à centraliser les données des patients, analyser leur état de santé, et faciliter l'enregistrement et 
+la gestion des informations médicales en temps réel.
 
-L'objectif de **HealthEnroll** est de simplifier les processus administratifs et médicaux tout en améliorant la qualité des soins et l'efficacité des workflows hospitaliers.
+L'objectif de **HealthEnroll** est de simplifier les processus administratifs et médicaux 
+tout en améliorant la qualité des soins et l'efficacité des workflows hospitaliers.
 
 ## Table des matières
 
@@ -17,21 +18,25 @@ L'objectif de **HealthEnroll** est de simplifier les processus administratifs et
 7. [Contribuer](#contribuer)
 8. [Licence](#licence)
 
----
-
 ## Présentation
 
-**HealthEnroll** centralise les informations des patients dans une base de données sécurisée accessible en temps réel. L'application permet aux professionnels de santé d’accéder rapidement aux dossiers médicaux des patients, d’effectuer des analyses, de suivre l'évolution de leur santé, et d’assurer un enregistrement sans faille lors des admissions. 
+**HealthEnroll** centralise les informations des patients dans une base de données sécurisée accessible en temps réel. 
+L'application permet aux professionnels de santé d’accéder rapidement aux dossiers médicaux des patients, d’effectuer des 
+analyses, de suivre l'évolution de leur santé, et d’assurer un enregistrement sans faille lors des admissions. 
 
-Elle est également conçue pour améliorer la gestion des flux de travail dans les établissements de santé grâce à une interface simple, intuitive et performante.
+Elle est également conçue pour améliorer la gestion des flux de travail dans les établissements de santé grâce à une interface simple,
+intuitive et performante.
 
 ## Fonctionnalités
 
-- **Centralisation des données des patients** : Toutes les informations des patients sont stockées de manière sécurisée et centralisée, permettant un accès rapide et fiable par les professionnels de santé autorisés.
+- **Centralisation des données des patients** : Toutes les informations des patients sont stockées de manière sécurisée et centralisée,
+-  permettant un accès rapide et fiable par les professionnels de santé autorisés.
   
-- **Mise à jour en temps réel** : Les données des patients sont mises à jour en temps réel, permettant aux médecins et aux infirmiers de suivre l'évolution de la santé des patients à chaque instant.
+- **Mise à jour en temps réel** : Les données des patients sont mises à jour en temps réel, permettant aux médecins et aux infirmiers de
+- suivre l'évolution de la santé des patients à chaque instant.
 
-- **Analyses avancées** : Des outils d’analyse intégrés permettent de réaliser des rapports sur l'état de santé des patients, facilitant ainsi le suivi médical et la prise de décisions.
+- **Analyses avancées** : Des outils d’analyse intégrés permettent de réaliser des rapports sur l'état de santé des patients, facilitant
+- ainsi le suivi médical et la prise de décisions.
 
 - **Enregistrement simplifié** : Le processus d'enregistrement des patients est optimisé, permettant une gestion rapide et précise des nouvelles admissions.
 
