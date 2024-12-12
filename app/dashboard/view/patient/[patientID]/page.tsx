@@ -65,7 +65,14 @@ const PatientInfo = async ({ params }: Props) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <h3 className="font-medium">Date de Naissance</h3>
-                <p>{patient.dateOfBirth}</p>
+                <p>
+                  {" "}
+                  {`le ${patient.dateOfBirth.toLocaleString("fr", {
+                    day: "2-digit",
+                    month: "long",
+                    year: "numeric",
+                  })}`}
+                </p>
               </div>
               <div>
                 <h3 className="font-medium">Sexe</h3>
@@ -106,7 +113,13 @@ const PatientInfo = async ({ params }: Props) => {
               <div>
                 <h3 className="font-medium">Date</h3>
                 <p>
-                  {`Le ${patient.createdAt.getUTCDate()} 0${patient.createdAt.getUTCMonth()} ${patient.createdAt.getFullYear()} a ${patient.createdAt.getUTCHours()}:${patient.createdAt.getMinutes()} min`}
+                  {`le ${patient.createdAt.toLocaleString("fr", {
+                    day: "2-digit",
+                    month: "long",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "numeric",
+                  })}`}
                 </p>
               </div>
             </div>

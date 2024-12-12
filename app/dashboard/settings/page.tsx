@@ -216,14 +216,7 @@ const Settings = async () => {
               <div className="p-7">
                 <form action="#">
                   <div className="mb-4 flex items-center gap-3">
-                    <div className="h-14 w-14 rounded-full">
-                      <Image
-                        src={"/images/user/user-03.png"}
-                        width={55}
-                        height={55}
-                        alt="User"
-                      />
-                    </div>
+                    <div className="h-14 w-14 rounded-full bg-red"></div>
                     <div>
                       <span className="mb-1.5 text-black dark:text-white">
                         Edit your photo

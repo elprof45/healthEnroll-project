@@ -163,26 +163,33 @@ const PatientTablUser = async () => {
                       "inline-flex rounded-full bg-opacity-10 px-3 py-1 text-sm font-medium"
                     }
                   >
-                    {patient.dateOfBirth.toLocaleString("fr", {
+                    {" "}
+                    {`le ${patient.dateOfBirth.toLocaleString("fr", {
                       day: "2-digit",
-                      month: "short",
+                      month: "long",
                       year: "numeric",
-                    })}
+                    })}`}
                   </p>
                 </td>
                 <td className="border-b border-[#eee] px-4 py-2 dark:border-strokedark">
                   <p className="bg-opacity-10 px-3 py-1 text-sm font-medium">
                     {`le ${patient.createdAt.toLocaleString("fr", {
                       day: "2-digit",
-                      month: "short",
+                      month: "long",
                       year: "numeric",
+                      hour: "numeric",
+                      minute: "numeric",
                     })}`}
                   </p>
                 </td>
                 <td className="border-b border-[#eee] px-4 py-2 dark:border-strokedark">
                   <Link
                     className="flex items-center space-x-3.5"
-                    href={`/dashboard/patient/${patient.patientId}`}
+                    href={
+                      session.user.role
+                        ? `/dashboard/view/patient/${patient.patientId}`
+                        : `/dashboard/patient/${patient.patientId}`
+                    }
                   >
                     <button className="hover:text-primary">
                       <svg
