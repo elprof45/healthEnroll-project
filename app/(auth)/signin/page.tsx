@@ -38,6 +38,7 @@ export default function LoginPage() {
                 seterror(() => (error = response?.message!));
               } else {
                 ref.current?.reset();
+                window.location.reload();
               }
             }}
             ref={ref}
