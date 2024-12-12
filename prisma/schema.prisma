@@ -1,0 +1,44 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+        
+
+model Patient {
+  patientId          String       @id @default(cuid())
+  firstName          String
+  lastName           String
+  dateOfBirth        DateTime
+  ID                 String       @unique
+  patientGender      String
+  address            String
+  phoneNumber        String       @unique
+  emailAddress       String?      @unique
+  currentMedications String?
+  bloodGroup         String
+  country            String
+  profession         String?
+  createdAt          DateTime     @default(now())
+  updatedAt          DateTime     @updatedAt
+  professionalId     String
+  enrolledById       Professional @relation(fields: [professionalId], references: [id])
+}
+
+model Professional {
+  id        String    @id @default(cuid())
+  name      String
+  email     String    @unique
+  password  String
+  about     String?   @default("Not yet !")
+  role      Boolean   @default(false)
+  specialty String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  patients  Patient[]
+}
