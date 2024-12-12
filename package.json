@@ -1,0 +1,49 @@
+{
+  "name": "healthenroll",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deployer": "npm install && npx prisma generate && npx prisma migrate deploy && next build"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.4.2",
+    "@liquid-js/qr-code-styling": "^3.1.1",
+    "@prisma/client": "^5.17.0",
+    "@react-pdf/renderer": "^4.1.5",
+    "@types/bcryptjs": "^2.4.6",
+    "@xmldom/xmldom": "^0.8.10",
+    "apexcharts": "^3.45.2",
+    "bcryptjs": "^2.4.3",
+    "file-type": "^19.3.0",
+    "flatpickr": "^4.6.13",
+    "jsvectormap": "^1.6.0",
+    "next": "14.2.5",
+    "next-auth": "^5.0.0-beta.20",
+    "next-safe-action": "^7.4.3",
+    "qrcode-generator": "^1.4.4",
+    "react": "^18",
+    "react-apexcharts": "^1.4.1",
+    "react-dom": "^18",
+    "react-to-print": "^3.0.2",
+    "sharp": "^0.33.4",
+    "sonner": "^1.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.10",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.4.41",
+    "prisma": "^5.17.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
